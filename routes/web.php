@@ -1,15 +1,20 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
-
-
-
-Route::view('/', 'welcome')->name('home');
-Route::view('contacto', 'contact')->name('contact');
 Route::view('nosotros', 'about')->name('about');
+Route::view('/', 'welcome')->name('home');
+
+
+
+//Route::view('contacto', 'contacts.index')->name('contact');
+//Route::get('/contacts', [ContactController::class, 'index'])->name('contacts.index');
+
+Route::resource('contacts', ContactController::class);
+
 
 /* --------------------------------------------------------------------------- */
 /* Route::get('blog', [PostController::class, 'index'])->name('posts.index');

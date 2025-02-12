@@ -1,14 +1,14 @@
 <x-layout meta-title="Blog title" meta-description="Home description">
 
-    <h1 class="title-blog">BLOG</h1>
+    <h1 class="title-blog">Tareas</h1>
 
-    <a class="btn btn-warning crear-post " href="{{ route('posts.create')}}">Crar nuevo Post</a>
+    <a class="btn btn-warning crear-post " href="{{ route('posts.create')}}">Crar nueva Tarea</a>
 
     <table class="table table-bordered table-striped text-center mx-auto" style="max-width: 800px;">
         <thead class="table-dark">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Título</th>
+                <th scope="col">Título de Tarea</th>
                 <th scope="col">Acciones</th>
             </tr>
         </thead>
